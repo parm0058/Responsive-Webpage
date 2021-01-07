@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* You must use a DIFFERENT FONT THAT THIS ONE as your webfont */
+
+/*************************************************
+            DEFAULTS
+*************************************************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+html{
+    font-size: 16px;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    /* change this font stack to your own choices */
+    line-height: 1.5;
+}
+p{
+    padding-bottom: 1rem;
+    
+    text-align: justify;
+}
+a{
+text-decoration-color: none;
+    }
+ul{
+    
+}
+ol{
+      
+}
+li{
+
+    
+}
+img{
+    width: 25%;
+    
+}
+
+/*************************************************
+            HEADER
+*************************************************/
+header{
+    padding: 1rem 2rem;
+    color: black;
+    background-size: cover;
+    
+}
+/*@media all and (max-width: 400px){
+    header{
+        background-image: url(../img/400.jpeg);
+    }    
+}
+
+@media all and (max-width: 600px){
+    header{
+        background-image: url(../img/500.jpeg);
+    }    
+}*/
+
+header > h1{
+
+     color: hsl(101deg,50%,50%);
+     font-family: fantasy;
+     font-size: 2rem;
+     padding: 4rem 0rem 1rem 0rem;
+}
+header > h2{
+
+    color: hsl(101deg,50%,50%);
+    font-family: fantasy;
+    font-size: 2rem;
+    padding: 1rem 0rem 4rem 0rem;
+    
+    
+}
+/*************************************************
+            NAVMENU
+*************************************************/
+nav{
+    padding:1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(200,200,200);
+    
+    
+    
+    
+}
+nav > a,
+nav > a:visited,
+nav > a:link{
+    padding: 0.4rem;
+
+    
+}
+nav > a:active,
+nav > a:focus,
+nav > a:hover{
+    font-weight:normal;
+    text-decoration:none;
+    color: cadetblue;
+    font-weight: bolder;
+}
+
+/*************************************************
+            MAIN CONTENT
+*************************************************/
+main{
+    padding: 1rem 2rem;
+    
+}
+section{
+    
+    display: grid;
+    grid-template-columns: 1ftr 1ftr;
+
+
+}
+section p{
+    text-align:justify;
+}
+    
+section p img{
+}
+
+/*************************************************
+            FOOTER
+*************************************************/
+footer{
+border-top: 1rem solid;
+    
+display: flex;
+    
+
+}
+.foot nav{
+    display: flex;
+    
+    
+    
+    
+}
+.foot section{
+    padding: 1rem 2rem;
+    
+}
+.foot dl{
+
+    
+
+}
+.foot dt{
+ 
+
+    
+   
+}
+.foot dd{
+
+        
+
+   
+
+}
+.foot dd a,
+.foot dd a:visited{
+
+    
+}
+.foot dd a:active,
+.foot dd a:focus,
+.foot dd a:hover{
+    font-weight:normal;
+    text-decoration:underline;
+    }
+
+button{
+    background-color: rgb(103,103,103);
+    color: rgb(255,255,255)
+    }
+form .form-box,input{
+    margin: 0rem 0rem 1rem 0rem;
+}
+form .form-box,input,select,textarea,button{
+    padding: 0.5rem;
+    border: 1px solid rgb(220,220,220)
+    }
+
+/*************************************************
+            MEDIA QUERIES for layout
+*************************************************/
+@media (max-width: 599px){
+    
+    .mainnav{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    nav > a:active,
+    nav > a:focus,
+    nav > a:hover{
+        color: rgb(150,0,180);
+    }
+    .subnav a:hover,
+    .subnav a:focus,
+    .subnav a:active{
+        color: rgb(150,0,180);
+    }
+    header{
+        background-image:url(../img/final1.jpeg);
+        border-top: 1.5rem solid rgb(150,0,180);
+        }
+    header h1,header h2{
+        color:rgb(88,88,88);
+        padding: 0rem 0rem 0.5rem;
+    }
+    
+    .segment{
+        grid-template-areas: 
+            "a"
+            "b"
+            "c";
+    }
+    .first{
+        grid-area: a;
+    }
+    .second{
+        grid-area: b;
+    }
+    .third{
+        grid-area: c;
+     }
+    .mainnav a{
+        border-bottom: 1px solid rgb(10,10,10);
+        color:rgb(10,10,10);
+    } 
+    section{
+    
+    display: grid;
+    grid-template-columns: 1ftr 1ftr;
+
+
+     }
+    header h1,header h2{
+        color : rgb(150,0,180);
+    }
+    section p{
+          text-align:justify;
+     }
+    section p img{
+        width: 60%;
+        float: left;padding: 0rem 1rem 0rem 0rem;
+    }
+    .subnav{
+        grid-template-columns: 1ftr 1ftr;
+        grid-template-areas: "a b";
+    }
+    .sunnav{
+        color: rgb(102,102,102);
+    }
+
+    .docs{
+        grid-area: a;
+    }
+    .channles{
+        grid-area: b;
+    }
+    form .form-box input,select,textarea,button{
+        widows: 100%;
+    }
+    footer{
+        border-color: rgb(150,0,180);
+        flex-direction: column-reverse;
+    }
+    main h1{
+        margin-bottom: 1rem;
+    }
+    main h2{
+        margin-bottom: 0.5rem;
+    }
+}
+@media (min-width: 600px) and (max-width:999px){
+    header{
+        background-image:url(../img/final3.jpeg);
+        border-top: 2rem solid rgb(150,0,180);
+    }
+    header h1,header h2{
+        color : rgb(150,0,180);
+    }
+    nav > a:active,
+    nav > a:focus,
+    nav > a:hover{
+        color: rgb(150,0,180);
+    }
+    .subnav a:hover,
+    .subnav a:focus,
+    .subnav a:active{
+        color: rgb(150,0,180);
+    }
+    .primary{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "a a"
+            "b c";
+        grid-gap: 1.5rem;
+            
+    }
+    .first{
+        grid-area: a;
+    }
+    .second{
+        grid-area: b;
+    }
+    .third{
+        grid-area: c;
+     }
+    .mainnav a{
+        color:rgb(102,102,102);
+    } 
+    section{
+    
+    display: grid;
+    grid-template-columns: 1ftr 1ftr;
+
+
+   }
+     section p{
+     text-align:justify;
+}
+    section p img{
+        width: 40%;
+        float: left;
+        padding: 0rem 1rem 0rem 0rem;
+    }
+    .second img,.third img{
+        width: 100%;
+        padding: 0rem 0rem 2rem 0rem;
+    }
+    .subnav{
+        grid-template-columns: 1ftr 1ftr;
+        grid-template-areas: "a b";
+    }
+    .sunnav{
+        color: rgb(102,102,102);
+    }
+
+    .docs{
+        grid-area: a;
+    }
+    .channles{
+        grid-area: b;
+    }
+    form .form-box input,select,textarea,button{
+        widows: 100%;
+    }
+    footer{
+        border-color: rgb(150,0,180);
+        flex-direction: column-reverse;
+    }
+    main h1{
+        margin-bottom: 1rem;
+        color: rgb(150,0,180);
+    }
+    main h2{
+        margin-bottom: 0.5rem;
+        color: rgb(150,0,180);
+    }
+        
+
+}
+@media (min-width: 1000px){
+    .mainnav{
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: rgb(200,200,200);
+    }
+    header{
+        background-image:url(../img/888888881.jpeg);
+        border-top: 1.5rem solid rgb(150,0,180);
+;
+        }
+    header h1,header h2{
+        color:rgb(150,0,180);
+        padding: 0rem 0rem 0.5rem;
+    }
+    nav > a:active,
+    nav > a:focus,
+    nav > a:hover{
+        color: rgb(150, 0, 180);
+    }
+    .subnav a:hover,
+    .subnav a:focus,
+    .subnav a:active{
+        color: rgb(150,0,180);
+    }
+    .primary{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "a b c";
+        grid-gap: 1.5rem;
+        align-items: flex-start;
+            
+    }
+    .first{
+        grid-area: a;
+    }
+    .second{
+        grid-area: b;
+    }
+    .third{
+        grid-area: c;
+     }
+    .mainnav a{
+        color:rgb(102,102,102);
+    } 
+    section{
+    
+    display: grid;
+    grid-template-columns: 1ftr 1ftr;
+
+    }
+    section p{
+    text-align:justify;
+    }
+    section p img{
+        width: 50%;
+        float: left;padding: 0rem 1rem 0rem 0rem;
+    }
+    .subnav{
+        grid-template-columns: 1ftr 1ftr;
+        grid-template-areas: "a b";
+    }
+    .sunnav{
+        color: rgb(102,102,102);
+    }
+
+    .docs{
+        grid-area: a;
+    }
+    .channles{
+        grid-area: b;
+    }
+    form .form-box input,select,textarea,button{
+        widows: 100%;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "p q";
+        border-color: rgb(150,0,180);
+        background-color: rgb(200,200,200);
+    }
+    .subnav{
+        grid-area: p;
+        background-color:rgb(200,200,200);
+    }
+    .comments{
+        grid-area: q;
+    }
+    main h1,main h2{
+        margin-bottom: 1rem;
+        color: rgb(150,0,180);
+    }
+}
